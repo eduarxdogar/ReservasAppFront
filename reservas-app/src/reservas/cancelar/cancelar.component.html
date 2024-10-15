@@ -1,0 +1,8 @@
+<!-- src/app/reservas/cancelar/cancelar.component.html -->
+<h2>Cancelar Reserva</h2>
+<form (ngSubmit)="cancelarReserva()">
+  <label for="reservaId">ID de la Reserva a cancelar:</label>
+  <input type="number" [(ngModel)]="reservaId" name="reservaId" required><br>
+
+  <button type="submit">Cancelar Reserva</button>
+</form>

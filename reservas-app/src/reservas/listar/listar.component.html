@@ -1,0 +1,15 @@
+<h2>Listado de Reservas</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Cliente ID</th>
+    <th>Servicio ID</th>
+    <th>Fecha de la Reserva</th>
+  </tr>
+  <tr *ngFor="let reserva of reservas">
+    <td>{{ reserva.id }}</td>
+    <td>{{ reserva.clienteId }}</td>
+    <td>{{ reserva.servicioId }}</td>
+    <td>{{ reserva.fechaReserva | date }}</td>
+  </tr>
+</table>
